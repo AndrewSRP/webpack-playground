@@ -36,3 +36,27 @@ module.exports = {
 package.json
 "build": "webpack"
 
+## css module 설치
+css loader 설치
+yarn add --dev style-loader css-loader
+
+설정파일에 module 추가
+module: {
+    rules: [
+      {
+         test: /\.css$/,
+         use: [
+           'style-loader',
+           'css-loader'
+         ]
+      }
+    ]
+  }
+
+## css추가하기
+app/text.css
+app/common.css
+
+app/entry.js <= require('./common.css');
+
+<head>영역에 <style>요소로 추가된다.
