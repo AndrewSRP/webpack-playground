@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "webpack ./app/entry.js bundle.js"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
+}
