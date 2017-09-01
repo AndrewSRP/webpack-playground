@@ -21,3 +21,18 @@ yarn build
 
 ## 생성된 작업 확인하기
 index.html
+
+## webpack option 지정하기
+webpack.config.js
+module.exports = {
+  entry: {
+    'entry': './app/entry.js'
+  },
+  output: {
+    filename: 'bundle.js'
+  }
+};
+
+package.json
+"build": "webpack"
+
