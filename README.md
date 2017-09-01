@@ -60,3 +60,25 @@ app/common.css
 app/entry.js <= require('./common.css');
 
 <head>영역에 <style>요소로 추가된다.
+
+##ES2015 babel 설치하기
+yarn add --dev babel-loader babel-core babel-preset-env
+webpack.conf <= {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: [[
+            'env', {
+              targets: {
+                browsers: ['last 2 versions']
+              }
+            }
+          ]]
+        }
+      }
+
+##ES2015 추가하기
+app/hello2015.js
+app/world2015.js
+app/entry2015.js

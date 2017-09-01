@@ -149,12 +149,22 @@ function toComment(sourceMap) {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
 __webpack_require__(2);
 
-var hello = __webpack_require__(7);
-var world = __webpack_require__(8);
-document.write(hello + ', ' + world + '!');
+var _hello = __webpack_require__(7);
 
+var _hello2 = _interopRequireDefault(_hello);
+
+var _world = __webpack_require__(8);
+
+var _world2 = _interopRequireDefault(_world);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+document.write(_hello2.default + ', ' + _world2.default + '!');
 
 /***/ }),
 /* 2 */
@@ -671,17 +681,21 @@ module.exports = function (css) {
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 module.exports = 'Hello';
 
-
 /***/ }),
 /* 8 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 module.exports = 'world to andrew would';
-
 
 /***/ })
 /******/ ]);
