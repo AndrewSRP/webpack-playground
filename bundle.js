@@ -686,7 +686,10 @@ module.exports = function (css) {
 "use strict";
 
 
-module.exports = 'Hello';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = 'Hello';
 
 /***/ }),
 /* 8 */
@@ -695,7 +698,10 @@ module.exports = 'Hello';
 "use strict";
 
 
-module.exports = 'world to andrew would';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = 'world';
 
 /***/ })
 /******/ ]);

@@ -82,3 +82,25 @@ webpack.conf <= {
 app/hello2015.js
 app/world2015.js
 app/entry2015.js
+
+##Eslint 추가
+yarn add --dev eslint
+yarn add --dev eslint-loader
+
+npm install -g eslint
+
+eslint --init
+
+vi .eslintrc.js
+module.exports = {
+    "extends": "airbnb-base",
+     "plugins": [
+        "import"
+    ],
+    "env": {
+      "browser": true
+    }
+};
+
+## 출처
+https://hyunseob.github.io/2017/03/21/webpack2-beginners-guide/
